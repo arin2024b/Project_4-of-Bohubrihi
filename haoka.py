@@ -4,8 +4,14 @@ randomNum = random.randint(1,50)
 # print(randomNum)
 countAttempt = 0
 
-while(countAttempt<5):
+while(countAttempt<6):
+    
+    if(countAttempt==5):
+        print("Your Chances are Over,Please Try Again Later")
+        break
+        
     user_input = int(input("Enter Your Guessing Number :"))
+    
     if(user_input>=1 and user_input<=50):
         if(user_input==randomNum):
             print("You got a correct guess and It's: ",user_input)
@@ -27,8 +33,7 @@ while(countAttempt<5):
         print('You Got Your 3rd Chance')
     elif (countAttempt == 3):
         print('You Got Your 4th Chance')
-    else:
-        print('You Got Your 5th And Last Chance And Your Chances are Over,Please Try Again Later')
-        break
+    elif (countAttempt == 4):
+        print('You Got Your 5th And Last Chance')
 
     countAttempt+=1
