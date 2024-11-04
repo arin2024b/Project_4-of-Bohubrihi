@@ -1,7 +1,7 @@
 import random
 
 randomNum = random.randint(1,50)
-print(randomNum)
+# print(randomNum)
 countAttempt = 0
 
 while(countAttempt<5):
