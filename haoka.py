@@ -23,7 +23,7 @@ while(countAttempt<6):
             elif(user_input>randomNum):
                 print("You Guessed Higher,Try To Guess Lower Number")
     else:
-        print("You Guessed Number Is Out Of Range,Please Give A Number Between 1-50")
+        print("Your Guessed Number Is Out Of Range,Please Give A Number Between 1-50")
 
     if (countAttempt == 0):
         print('You Got Your 1st Chance')
